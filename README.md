@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+Sportips 🏃
+A beginner-friendly mobile app that provides sports tutorials and guides, helping newcomers learn how to exercise and get started with various sports. Built with Expo (React Native) and TypeScript.
+Features
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+📋 Browse a list of sports with detailed tutorial pages
+🔐 User authentication (login & register)
+📱 Cross-platform — runs on Android, iOS, and web via Expo
 
-## Get started
+Tech Stack
 
-1. Install dependencies
+Framework: Expo (React Native)
+Language: TypeScript
+Routing: Expo Router (file-based)
+Forms & Validation: React Hook Form + Zod
+HTTP Client: Axios
+Package Manager: pnpm
 
-   ```bash
-   npm install
-   ```
+Project Structure
+app/          screens & routes (file-based routing)
+components/   reusable UI components (Button, Form, Header, etc.)
+contexts/     React contexts (e.g. auth)
+hooks/        custom hooks (e.g. useAuth)
+libs/         utilities & helpers
+assets/       images & static files
+Get Started
 
-2. Start the app
+Install dependencies
 
-   ```bash
-   npx expo start
-   ```
+bash   pnpm install
 
-In the output, you'll find options to open the app in a
+Set up environment variables — create a .env file:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   EXPO_PUBLIC_API_URL=http://<your-backend-host>:8000/api
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Note: this app connects to a separate backend API for authentication and sports data. The frontend runs standalone, but login/data features require the backend to be running.
 
-## Get a fresh project
 
-When you're ready, run:
+Start the app
 
-```bash
-npm run reset-project
-```
+bash   npx expo start
+Then open it in an Android emulator, iOS simulator, Expo Go, or the web.
+Contributors
+This is a team project. See the contributors page for everyone involved.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built as a collaborative learning project.
